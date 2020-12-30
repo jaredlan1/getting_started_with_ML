@@ -1,0 +1,25 @@
+12/30/2020
+-Started clearing up space from the C drive 
+-Reinstalled The Lab and all packages 
+-Created first project in Unity with Lumin I tried to follow this project https://www.youtube.com/watch?v=orHU1KIFn3A&list=PL_j5e9ibbeEOvYUTLu7aQ2s4RxkAdFax6
+  -Troubleshooted licence issue
+    -Used MagicLeap account to create new license 
+    -Downloaded privatekey.zip 
+    -Wait until status changes to Active and download magic_leap.cert 
+    -Move magic_leap.cert inside privatekey.zip
+    -Place privatekey(unziped) inside C:\Users\jaredlan\MagicLeap\mlsdk\v0.24.1 
+    (same as Lumin SDK location ->Edit ->Preferences -> External Tools ->Lumin SDK
+    So assign certificates ->Edit ->Project Settings ->Project -> Player -> Lumin Settings(magic leap icon tab under Cursor Hotspot) 
+    ->Publishing Setting ->Select Sign Package ->Find directory 
+    -For directory you must select the magic_leap.cert
+    -> File -> Run and Build 
+    Using ML headset approve the new license (Previousely connect device to The Lab
+ -I ran the project and showed up on the Magic Leap. Success! 
+ -Created Github repository and this file 
+ 
+ 
+ Resources Used today 
+ https://circuitstream.com/blog/deploy-magic-leap-one-unity/#:~:text=To%20do%20this%2C%20open%20the,your%20Magic%20Leap%20project%20folder.
+ https://www.programmersought.com/article/4458168045/
+ https://developer.magicleap.com/en-us/learn/guides/get-started-developing-in-unity <- this is the tutorial for the project that I did. I continued and tried to the Mesh 
+ 
