@@ -45,5 +45,6 @@
 1/5/2021 
 -Ignore Error Legacy XR is disabled in unity 20, project settings has virtual reality blocked out
 -The Virtual reality supported check box is not needed (reffer to previous error) 
--
+-Avoid closing the Zero Iteration before finishing the Unity Game View 
+-If launching Zero Iteration there are probles with the simulation (like showing the unity scenem rather than the simulation)make sure you have the prefab camera form ML
   
