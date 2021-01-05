@@ -25,3 +25,22 @@
  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1/4/2021 
+-Relaunch project in Magic Leap multiple times. 
+-Found out that Magic Leap Simulator == Zero Interation 
+-Project in Zero Interation runs, but project using the headseat does not run properly 
+  -Hello Cube is not updating as it goes, at least the meshes. It reads the first image, but when I start moving my head it doesnt
+  do anything, it keeps the same initial mesh 
+ -Tried to build in the Controler 
+ -Had CS0123 buildinig erros 
+ -Error came from scrpit found in the developer website. 
+ -Description of the I error posted online --> https://forum.magicleap.com/hc/en-us/community/posts/360076178732-Controller-Bottom-Error-on-Tutorial-Project
+ -Tried a different tutorial online
+ -Started this tutorial https://www.youtube.com/watch?v=ZfJqkIszODI minute 3.02 
+ #controler
+ #launching 
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  
