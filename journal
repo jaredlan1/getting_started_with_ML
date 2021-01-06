@@ -47,4 +47,15 @@
 -The Virtual reality supported check box is not needed (reffer to previous error) 
 -Avoid closing the Zero Iteration before finishing the Unity Game View 
 -If launching Zero Iteration there are probles with the simulation (like showing the unity scenem rather than the simulation)make sure you have the prefab camera form ML
-  
+-Spatial_Meshing_vr2 finally ran!! 
+-I tried several times to upload the app, I was uploading Hello, Cube and that was the only thing showcasing 
+  -Under Build Settings I oppened scene and selected only spatial_meshing-vr2 
+  -Maybe both scences were uploaded, but I didn't build a menu buttom to go to the next scene(meshing script) so I was only seeing first scene (hello cube) 
+  -Meshing has a hard time recognizing the black poles around the Globe -> maybe it can't see black surfaces 
+  -Meshing has a hard time recognizing the black bottom (acrylic surface) -> maybe it can't read black shining surfaces 
+ -Started Control6DOF 
+ 
+ #Zero Interaction #meshing 
+ https://developer.magicleap.com/en-us/learn/guides/meshing-in-unity
+ 
+
