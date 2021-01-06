@@ -58,4 +58,12 @@
  #Zero Interaction #meshing 
  https://developer.magicleap.com/en-us/learn/guides/meshing-in-unity
  
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1/6/2021  
+-I was having issues with the Device View window running the Zero Iteration 
+  -Problem: camera was not moving in the Device View
+  -Solution: Zero Iteration -> Edit Action Binding -> Connected Devices -> Peripherial ->Key/mouse settings buttom to  the right
+  -> Reset Bindings to Factory Default 
+  -I must have changed it somehow, but now it's working fine :) 
+ 
