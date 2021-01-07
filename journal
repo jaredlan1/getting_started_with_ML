@@ -66,4 +66,7 @@
   -Solution: Zero Iteration -> Edit Action Binding -> Connected Devices -> Peripherial ->Key/mouse settings buttom to  the right
   -> Reset Bindings to Factory Default 
   -I must have changed it somehow, but now it's working fine :) 
- 
+  -This is a forum about the first tutorial (good reference and I ran into some of those issues. 
+  https://forum.magicleap.com/hc/en-us/community/posts/360056521452--Unity-ML-Controller-in
+ -The unity template .024 worked for meshing and the light beam that follows the controller :) 
+ posted video of progress of project ->  https://www.youtube.com/watch?v=3i0oitgWP78&t=16s
