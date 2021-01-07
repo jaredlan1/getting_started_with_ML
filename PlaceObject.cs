@@ -9,15 +9,16 @@ public class PlaceObject : MonoBehaviour
     public GameObject ObjectToPlace;
     private MLInput.Controller controller;// missing a _ before controller?? 
     
+    
     // Start is called before the first frame update
     void Start()
     {
         MLInput.Start();
-        
+        MLInput.OnControllerButtonDown += OnButtonDown;
         controller = MLInput.GetController(MLInput.Hand.Left);
     }
 
-    private void HandleOnButtonDown(byte controller_id, MLInput.Controller.Button button)
+     private void OnButtonDown(byte controller_id, MLInput.Controller.Button button)
     {
         if (button == MLInput.Controller.Button.Bumper)
         {
@@ -29,8 +30,9 @@ public class PlaceObject : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    void OnDestroy()
     {
+        MLInput.OnControllerButtonDown -= OnButtonDown;
         MLInput.Stop();
         
     }
