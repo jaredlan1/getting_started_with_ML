@@ -79,5 +79,6 @@ I tried importing a controller assest from a differen Unity Template projects, b
 -The Controller input is not working in the simulator,but when I upload it to my ML it works fine. I deleted line 37 in the DynamicBeam.cs of UnityTemplate-0.24.0_vr4 ->contro_Input_vr4 
 - I fixed the problem, it looks like the Rocket Prefab has some scripts to it, so I tried to replace the rocket with a Prefab cube I made and it worked! 
 - I uploaded the fixed code under PlaceObject in this repository
+-When mesh is not created there will be a missplacement of the LineRenderer, it will happen more often in Simulator because at the beggning not all of the room is meshed, so the LineRender goes crazy 
 
 
