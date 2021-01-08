@@ -75,10 +75,18 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1/7/2021
 -I opened the program today and the controller scripts were not working. I had a warning that said that there were some references inside the scripts were missing. I'm not sure what happend.
-I tried importing a controller assest from a differen Unity Template projects, but it did not work. I had to start a compleatly new project and then it was working fine. 
--The Controller input is not working in the simulator,but when I upload it to my ML it works fine. I deleted line 37 in the DynamicBeam.cs of UnityTemplate-0.24.0_vr4 ->contro_Input_vr4 
-- I fixed the problem, it looks like the Rocket Prefab has some scripts to it, so I tried to replace the rocket with a Prefab cube I made and it worked! 
-- I uploaded the fixed code under PlaceObject in this repository
--When mesh is not created there will be a missplacement of the LineRenderer, it will happen more often in Simulator because at the beggning not all of the room is meshed, so the LineRender goes crazy 
+  I tried importing a controller assest from a differen Unity Template projects, but it did not work. I had to start a compleatly new project and then it was working fine. 
+  -The Controller input is not working in the simulator,but when I upload it to my ML it works fine. I deleted line 37 in the DynamicBeam.cs of UnityTemplate-0.24.0_vr4 ->contro_Input_vr4 
+  - I fixed the problem, it looks like the Rocket Prefab has some scripts to it, so I tried to replace the rocket with a Prefab cube I made and it worked! 
+  - I uploaded the fixed code under PlaceObject in this repository
+  -I keep with the tutorial, know the placing and picking up the objects work  
+  -final version as of today is control_input_vr5 
+  
+ -When mesh is not created there will be a missplacement of the LineRenderer, it will happen more often in Simulator because at the beggning not all of the room is meshed, so the LineRender goes crazy 
 
+#control_input_in_unity #magic_leap_developer_guide #youtube_tutorial
+Tutorial of the project --> https://www.youtube.com/watch?v=ZfJqkIszODI&t=307s
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
