@@ -89,4 +89,9 @@ Tutorial of the project --> https://www.youtube.com/watch?v=ZfJqkIszODI&t=307s
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1/12/2021
 
+-Goal of the Week : Get an object to be placed on the same location everytime. 
+-Tutorial in Unity does not work, is outdate -->https://developer.magicleap.com/en-us/learn/guides/persistence-tutorial-local-unity 
+  -MLPersistentBehavior script has been removed from API/PCF 
+  Found an updated tutorial that intents to do the same -->https://medium.com/japanese-magic-leap-fans/content-persistence-local-unity-lumin-sdk-v-0-24-x-f221f03bf9b
