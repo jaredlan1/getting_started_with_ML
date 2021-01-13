@@ -95,3 +95,18 @@ Tutorial of the project --> https://www.youtube.com/watch?v=ZfJqkIszODI&t=307s
 -Tutorial in Unity does not work, is outdate -->https://developer.magicleap.com/en-us/learn/guides/persistence-tutorial-local-unity 
   -MLPersistentBehavior script has been removed from API/PCF 
   Found an updated tutorial that intents to do the same -->https://medium.com/japanese-magic-leap-fans/content-persistence-local-unity-lumin-sdk-v-0-24-x-f221f03bf9b
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1/12/2021
+-App doesn't work in globe, it does not store the desired position 
+  -I could set a initial position on where to turn on the headset and manualy position the starting position, but it's not ideal
+  -I'm trying to find other documentation about this
+  https://forum.magicleap.com/hc/en-us/community/posts/360060126452
+ https://forum.magicleap.com/hc/en-us/community/posts/360071245511-Unable-to-locate-MLPersistentBehavior-cs
+ https://forum.magicleap.com/hc/en-us/community/posts/360074289331-Working-Sample-for-PCF-and-WebXR
+ https://forum.magicleap.com/hc/en-us/community/posts/360055893331-Sample-code-for-Persistent-Coordinate-Frames?page=1#community_comment_360008837791
+https://forum.magicleap.com/hc/en-us/community/posts/360061740411-PCF-is-not-in-good-state-
+https://github.com/dilmerv/MagicLeapEssentials/blob/master/Assets/MagicLeap/Examples/Scripts/Visualizers/PersistentBall.cs
+https://github.com/dilmerv/MagicLeapControllerInput/blob/master/Assets/MagicLeap/CoreComponents/MLPersistentPoint.cs
+https://github.com/dilmerv/MagicLeapEssentials/blob/master/Assets/MagicLeap/Core/Scripts/MLPersistentBehavior.cs
