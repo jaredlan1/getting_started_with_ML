@@ -110,3 +110,22 @@ https://forum.magicleap.com/hc/en-us/community/posts/360061740411-PCF-is-not-in-
 https://github.com/dilmerv/MagicLeapEssentials/blob/master/Assets/MagicLeap/Examples/Scripts/Visualizers/PersistentBall.cs
 https://github.com/dilmerv/MagicLeapControllerInput/blob/master/Assets/MagicLeap/CoreComponents/MLPersistentPoint.cs
 https://github.com/dilmerv/MagicLeapEssentials/blob/master/Assets/MagicLeap/Core/Scripts/MLPersistentBehavior.cs
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1/14/2021
+-I tried downloading the Unity Template for Lumin SDK 0.23.x. but there were to many errors, so I tried the Unity Template sdk0.22 
+  -I downloaded the Lumin SDK 0.22 from the Zero Iteration Manager Package and updated the location where Unity retrieves the packages. 
+  -It finally worked, but the program does not run very smoothly, there are problems with it. The placement after reboot is not quite accurate
+  
+  Possible solutions 
+  -Have to manually place the GameObject everytime there is a reboot 
+    Create this reference points by an interaction with the poles, like place objects in pole to have a reference and place the following content in the right place 
+   
+  Issues 
+     -We are creating the spripts with old updates of APIs, which in the future it's going to be difficult to change as the project keeps groing
+     
+
+
+
+
