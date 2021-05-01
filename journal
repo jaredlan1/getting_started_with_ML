@@ -129,3 +129,39 @@ https://github.com/dilmerv/MagicLeapEssentials/blob/master/Assets/MagicLeap/Core
 
 
 https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4/20/2021 
+
+-Animation offset 
+  *Problem 
+  The scaling of an object is causing a miss position of the end point of the object when we are doing animations with the Animator/Timelie 
+  
+  *Solution 
+  1. Under the Timeline you can creat a Recording and at different phrames you can change the scale&position location. This solves the problem, but it causes weird m
+  movements along the animation on play mode, just cosmeticly funny 
+  2. Create a parent object and position it on the desired Pivot point. This will allow you to control the location where the transformation is happening(scale or positition) 
+  
+https://www.youtube.com/watch?v=yVSa1wurt8s
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Content Persistance Solution between different scenes. 
+
+1.Choose a desired object which other objects will reference(you can do this by a position contraint component on the editor). 
+2.Add a DonotDestroyOnLoad function to that GameObject 
+3. You could create a new PositionReference GameObject that looks for our DontDestryoOnLoad GameOjbect 
+EXAMPLE 
+void Start()
+        //find earth to locate position 
+        EarthPlaceHolder = GameObject.FindGameObjectWithTag("PersistanceBehavior");
+        // set this.gameobject's position to the position of the EarhtPlaceHolder 
+        //This controls the Body1, which controls all the position using a position contraint component. 
+        transform.position = EarthPlaceHolder.transform.position;
+
+
