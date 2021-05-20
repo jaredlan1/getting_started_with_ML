@@ -165,3 +165,7 @@ void Start()
         transform.position = EarthPlaceHolder.transform.position;
 
 
+5/19/2021 
+-Found that application.wait for async operation to complete unity is overloading the machine and it's the main reason why it is crashing. 
+I suppose the best way is to keep one single scene, which will reduce the processing power need to load different scenes. 
+-So when I come back the first task is to condense all of the scenes into a single scene. Think of a way to change states 
