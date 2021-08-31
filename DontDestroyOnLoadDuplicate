@@ -1,0 +1,66 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DontDestroyOnLoad : MonoBehaviour
+{
+
+    private int count = 0;
+    private int counter;
+    private bool DoublePlace;
+
+    //  public static DontDestroyOnLoad Instance;
+
+    // void Awake()
+    //  {
+    //       if (Instance != null) { Destroy(gameObject); return; } // stops dups running
+    //       DontDestroyOnLoad(gameObject); // keep me forever
+    //       Instance = this; // set the reference to it
+
+    //... code to run only once...
+    //   }
+
+
+    //bool DoublePlace = false;
+    //Will keep this place holder 
+    //void update()
+    //{
+    //  bool DoublePlace = false;
+    //  int counter = count + 1;
+
+    //  if (!DoublePlace)
+    //  {
+    //      DontDestroyOnLoad(this.gameObject);
+    //      DoublePlace = true;
+    //  }
+    // if (counter == 1)
+    // {
+    //    DontDestroyOnLoad(this.gameObject);
+
+    // }
+
+
+
+    //}
+
+    //public static class Services
+    // {
+    //     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    //     public static void Initialize()
+    //     {
+    //         Debug.Log("test");
+    //     }
+    // }
+    private static DontDestroyOnLoad playerInstance;
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+
+        if (playerInstance == null)
+        {
+            DontDestroyOnLoad(this);
+            playerInstance = this;
+        }
+
+    }
+}
