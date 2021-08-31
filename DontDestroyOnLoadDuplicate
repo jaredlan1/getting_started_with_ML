@@ -5,22 +5,15 @@ using UnityEngine;
 public class DontDestroyOnLoad : MonoBehaviour
 {
 
-    private int count = 0;
-    private int counter;
-    private bool DoublePlace;
+    
 
-    //  public static DontDestroyOnLoad Instance;
-
-    // void Awake()
-    //  {
-    //       if (Instance != null) { Destroy(gameObject); return; } // stops dups running
-    //       DontDestroyOnLoad(gameObject); // keep me forever
-    //       Instance = this; // set the reference to it
-
-    //... code to run only once...
-    //   }
-
-
+    //******************************************************************************************
+    //******************************************************************************************
+    //The problem with this counter method is that my counter re-starts when the Scene is loaded. 
+   
+   //private int count = 0;
+    // private int counter;
+    //  private bool DoublePlace;
     //bool DoublePlace = false;
     //Will keep this place holder 
     //void update()
@@ -38,29 +31,35 @@ public class DontDestroyOnLoad : MonoBehaviour
     //    DontDestroyOnLoad(this.gameObject);
 
     // }
-
-
-
     //}
-
-    //public static class Services
-    // {
-    //     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    
+    //******************************************************************************************
+    //******************************************************************************************
+    // Uses the RuntimeInitialize on Load, which it should run only once ,but it is not working 
+   
+   // public static class Services
+    //  {
+    //      [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     //     public static void Initialize()
-    //     {
-    //         Debug.Log("test");
-    //     }
-    // }
-    private static DontDestroyOnLoad playerInstance;
-    void Awake()
-    {
-        DontDestroyOnLoad(this);
+    //      {
+    //          Debug.Log("test");
+    //      }
+    //   }
+    
+    //************************************************************************************************
+    //************************************************************************************************
+    // It should load the DontDestroyOnLoad only once, but I think I don't fully understand the static , so maybe I'm not using it properly 
+   
+   private static DontDestroyOnLoad  playerInstance;
+       void Awake()
+       {
+          // DontDestroyOnLoad(this);
 
-        if (playerInstance == null)
-        {
-            DontDestroyOnLoad(this);
-            playerInstance = this;
-        }
+           if (playerInstance == null)
+           {
+               DontDestroyOnLoad(this);
+                playerInstance = this;
+           }
 
-    }
+      }
 }
